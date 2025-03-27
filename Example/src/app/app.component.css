@@ -1,0 +1,18 @@
+.col {
+
+    flex : 50%
+}
+.row {
+     display: flex;
+}
+
+.bga{
+
+    background-color :rgb(17, 17, 215);
+    height: 800px;
+}
+.bgb{
+
+    background-color: rgb(0, 255, 60);
+    height: 800px;
+}
