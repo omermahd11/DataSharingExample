@@ -1,1 +1,13 @@
 <p>b works!</p>
+{{message}}
+
+<h2> Add New User</h2>
+
+
+<input type="number" [(ngModel)]="id" placeholder="Enter user id"/>
+<br><br>
+<input type="text" [(ngModel)]="name" placeholder="Enter user name"/>
+<br><br>
+<input type="text" [(ngModel)]="email" placeholder="Enter user email"/>
+<br><br>
+<Button (click)="addUser()">Add User</Button>

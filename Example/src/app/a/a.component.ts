@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { User } from '../../User';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-a',
@@ -8,4 +10,17 @@ import { Component } from '@angular/core';
 })
 export class AComponent {
 
+
+  users : User[] = []
+
+  service : DataService
+
+  constructor( service : DataService){
+
+    this.service = service
+  }
+
+  displayUsers(){
+     this.users = this.service.getUsers()
+  }
 }

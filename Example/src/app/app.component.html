@@ -1,7 +1,10 @@
 <h1> Data Sharing {{title}}</h1>
 <!-- root component-->
 
+<input type="text"  [(ngModel)]="parentMessage"  placeholder="Enter text"/>
+<br>
+<p>{{message}} </p>
 <div class="row">
   <div class="col bga"> <app-a></app-a></div>
-  <div class="col bgb"><app-b></app-b></div>
+  <div class="col bgb"><app-b [message]="parentMessage"></app-b></div>
 </div>
